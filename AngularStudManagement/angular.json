@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AngularStudManagement"
+    }
+  },
+  "defaultProject": "AngularStudManagement",
+  "cli": {
+    "analytics": "aa6ff68a-3f32-4882-ba91-2edfe11a193a"
+  }
 }
