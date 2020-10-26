@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { StudentComponent } from './student/student.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { StudentListComponent } from './student/student-list/student-list.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        StudentComponent
+        StudentComponent,
+        StudentListComponent
     ],
     imports: [
         BrowserModule,
