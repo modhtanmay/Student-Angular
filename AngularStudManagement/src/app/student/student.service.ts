@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
     providedIn: "root"
 })
 
-export class EmployeeService {
+export class StudentService {
 
     private baseUrl = 'http://localhost:8081/api/v1/students';
 
