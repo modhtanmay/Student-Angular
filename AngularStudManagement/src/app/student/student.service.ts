@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http"
 import { Observable } from 'rxjs';
+import { Student } from './student.model';
 
 @Injectable({
     providedIn: "root"
@@ -46,8 +47,8 @@ export class StudentService {
     //     return ResponseEntity.ok(updatedStudent);
     // }
 
-    updateStudent(id: number, value: any): Observable<Object> {
-        return this.http.put(`${this.baseUrl}/${id}`, value);
+    updateStudent(id: number, student: any): Observable<Object> {
+        return this.http.put(`${this.baseUrl}/${id}`, student);
     }
 
     //     @DeleteMapping("/students/{id}")
