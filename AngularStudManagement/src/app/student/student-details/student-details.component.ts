@@ -13,10 +13,10 @@ export class StudentDetailsComponent implements OnInit {
     id: number;
     student: any;
 
+
     constructor(private route: ActivatedRoute, private router: Router, private studentService: StudentService) { }
 
     ngOnInit(): void {
-        this.student = new Student();
         this.id = this.route.snapshot.params['id'];
 
         this.studentService.getStudent(this.id)
